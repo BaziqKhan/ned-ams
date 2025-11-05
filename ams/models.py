@@ -171,7 +171,7 @@ class ItemInstance(models.Model):
 
 # === IssueTransaction (issue / transfer document) ===
 class IssueRequisiton(models.Model):
-    requisiton_no = models.CharField(primary_key=True,max_length=64)
+    requisiton_no = models.CharField(max_length=64)
     issue_date = models.DateField(blank=True, null=True)
     purpose = models.CharField(max_length=255,null=True)
     department = models.ForeignKey(Location,on_delete=models.CASCADE)
