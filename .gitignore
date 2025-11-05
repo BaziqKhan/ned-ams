@@ -1,0 +1,6 @@
+myenv/
+# VSCode / IDE
+.vscode/
+# Django
+*.sqlite3
+db.sqlite3
